@@ -75,11 +75,19 @@ body{
     *{
         text-align: left;
     }
+    .msg{
+        padding-left: 0;
+    }
     .input{
         width: 80%;
         margin: 20px 0;
     }
+    .heading,.guesses{
+        text-align: left;
+        padding-left: 0;
+    }
     .container{
+        padding-left: 8%;
         position: relative;
         max-width: 100%;
         margin: 0;
@@ -88,7 +96,7 @@ body{
         margin: 20px 0;
         padding: 8px 16px;
     }
-    h2{
+    .guesses{
         font-size: .9rem;
     }
 }
