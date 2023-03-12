@@ -30,7 +30,7 @@ body{
 .heading{
     text-align: left;
     padding-left: 20px;
-    color: grey;
+    color: rgb(13, 11, 11);
     font-weight: 600;
 }
 .msg{
@@ -99,4 +99,38 @@ body{
     .guesses{
         font-size: .9rem;
     }
+}
+
+.container::before,
+.container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: 10px solid #333;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Add a gradient background to the border */
+.container::before {
+  background: linear-gradient(135deg, #8e54e9, #4776e6, #3db3bf, #78c055, #f6c85f);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+/* Animate the gradient background */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
