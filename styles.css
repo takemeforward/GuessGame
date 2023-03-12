@@ -1,0 +1,79 @@
+*,::before,::after{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(180, 207, 198);
+}
+.container{
+    border-radius: 30px;
+    font-family: sans-serif;
+    /* text-align: center; */
+    padding: 4%;
+    position: fixed;
+    width: 500px;
+    background-color: #fff;
+    left: 50%;
+    top: 50px;
+    /* bottom: 50%; */
+    box-shadow: 12px 0 20px rgba(0, 0, 0, 0.4);
+    transform: translateX(-50%);
+
+}
+.success{
+    background-color: rgb(27, 115, 27);
+    color: white;
+}
+.try{
+    background-color: rgb(218, 218, 97);
+}
+.fail{
+    background-color: red;
+    color: white;
+}
+.heading{
+    text-align: left;
+    padding-left: 20px;
+    color: grey;
+    font-weight: 600;
+}
+.msg{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.01rem;
+}
+.input{
+    padding: 12px 20px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid grey;
+    margin: 12px;
+}
+.input:hover{
+    outline: 1px solid grey;
+}
+.submit{
+    padding: 12px 20px;
+    border-radius: 12px;
+    border-style: none;
+    background-color: rgb(56, 148, 78);
+    color: white;
+    font-size: 1.02rem;
+    cursor: pointer;
+}
+.restart{
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border-style: none;
+    background-color: rgb(72, 51, 169);
+    color: white;
+    font-size: 1.02rem;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+.guesses{
+    padding-left: 20px;
+    text-align: left;
+}
